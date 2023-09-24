@@ -30,3 +30,12 @@ For a standard installation please follow the <a href="https://www.odoo.com/docu
 from the documentation.
 
 To learn the software, we recommend the <a href="https://www.odoo.com/slides">Odoo eLearning</a>, or <a href="https://www.odoo.com/page/scale-up-business-game">Scale-up</a>, the <a href="https://www.odoo.com/page/scale-up-business-game">business game</a>. Developers can start with <a href="https://www.odoo.com/documentation/16.0/developer/howtos.html">the developer tutorials</a>
+
+
+
+
+
+# Further reading
+
+After installing modules, if you get an error with "ir_http" charset, you may open the **Lib\site-packages\werkzeug\sansio\response.py"** file and edit the
+self.headers.add("Set-Cookie"......) function. Set the charset to "utf-8" by default.
